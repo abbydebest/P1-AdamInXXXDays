@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.68 131.02">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: HKGrotesk-Bold, 'HK Grotesk';
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-3 {
+        font-family: PPAgrandir-GrandHeavy, 'PP Agrandir';
+        font-size: 26px;
+        font-weight: 800;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.13em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-3" transform="translate(0 22.31)"><tspan x="0" y="0">A</tspan><tspan class="cls-2" x="26.34" y="0">D</tspan><tspan x="51.58" y="0">AM</tspan><tspan x="0" y="25">IN</tspan><tspan x="0" y="50">XXX</tspan><tspan class="cls-2" x="0" y="75">D</tspan><tspan class="cls-8" x="25.25" y="75">A</tspan><tspan class="cls-7" x="48.18" y="75">Y</tspan><tspan x="71.24" y="75">S</tspan></text>
+    <text class="cls-1" transform="translate(0 120.38)"><tspan class="cls-4" x="0" y="0">B</tspan><tspan x="8.61" y="0">Y I</tspan><tspan class="cls-5" x="25.28" y="0">S</tspan><tspan class="cls-6" x="33.07" y="0">GA</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,968 @@
+@font-face {
+  font-family: "PPAgrandir-GrandHeavy2";
+  src: url(./fonts/PPAgrandir-GrandHeavy2.otf);
+}
+
+@font-face {
+  font-family: "HKGrotesk-Medium2";
+  src: url(fonts/HKGrotesk-Medium2.otf);
+}
+
+@font-face {
+  font-family: "HKGrotesk-Bold2";
+  src: url(fonts/HKGrotesk-Bold2.otf);
+}
+
+@media screen and (max-width: 375px) {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body:not(.all-spots) {
+  background-color: #f4efed;
+}
+
+body {
+  margin: 0em;
+  font-family: "HKGrotesk-Medium2";
+  font-size: 1em;
+}
+
+hr {
+  border: 0.065em solid #221f20;
+  stroke-linecap: round;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:hover:visited {
+  text-decoration: underline;
+}
+
+/* Source hide scrollbar: https://bit.ly/3wypsCu */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+  margin: 1em 0;  
+  font-family: "PPAgrandir-GrandHeavy2";
+  font-size: 1.8em;
+}
+
+.title2 {
+  font-family: "PPAgrandir-GrandHeavy2";
+  font-size: 1.5em;
+  padding: 1.2em 0 0.8em 0.7em;
+}
+
+.title3 {
+  font-family: "PPAgrandir-GrandHeavy2";
+  font-size: 1.5em;
+  margin: 1.1em 1.1em 1.1em 1.4em;
+}
+
+.subheading {
+  font-family: "HKGrotesk-Bold2";
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.titleinfo {
+    font-family: "PPAgrandir-GrandHeavy2";
+    font-size: 1.5em;
+    padding: 1em 0.8em 0.3em 1em;
+  }
+
+.primary {
+  width: 220px;
+  font-size: 1.3em;
+  padding: 1em;
+  font-family: "HKGrotesk-Bold2";
+  color: white;
+  background-color: #221f20;
+  border-radius: 50px;
+  border: 2px solid #221f20;
+}
+
+.secondary {
+  width: 220px;
+  font-size: 1.3em;
+  padding: 1em;
+  font-family: "HKGrotesk-Bold2";
+  background-color: #f4efed;
+  border-radius: 50px;
+  border: 2px solid #221f20;
+}
+
+.buttons {
+  text-align: center;
+  margin: 3em 0;
+}
+
+button {
+  margin: 0.5em;
+  position: relative;
+  z-index: 8;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    text-align: center;
+}
+
+header section.space {
+    padding: 0.5em;
+    background-color: #f4efed;
+}
+
+header hr {
+  margin: 0 1.1em;
+}
+
+/* Menu */
+/* Source menu: https://bit.ly/403kz1D */
+nav {
+  display: flex;
+  height: 75px;
+  width: 100%;
+  background: #f4efed;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.7em 0.5em 1.7em;
+  z-index: 10;
+}
+
+nav .logo {
+  width: 50px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  z-index: 11;
+}
+
+nav ul li a.white {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav .hamburger {
+  width: 50px;
+  display: block;
+}
+
+nav .hamburger img {
+  width: 80%;
+  cursor: pointer;
+}
+
+#click {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  nav .menu-btn div {
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn div:before {
+    content: " ";
+  }
+
+  nav ul {
+    position: fixed;
+    top: -100%;
+    background: #221f20;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  nav ul li {
+    margin: 0 1.1em;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.8em 0;
+    color: white;
+    font-family: "PPAgrandir-Grandheavy2";
+    font-size: 1.8em;
+    border-bottom: 2px solid white;
+  }
+
+  #click:checked ~ ul {
+    top: 84px;
+    left: 0;
+  }
+
+  #click:checked ~ nav {
+    background: #221f20;
+  }
+
+  nav ul li a.active {
+    border-top: 2px solid white;
+  }
+}
+
+/* 💗💗💗 Home page 💗💗💗 */
+.welcome {
+  margin: 0 1.1em;
+  text-align: center;
+  padding: 6em 0 0 0;
+}
+
+.welcome p {
+  margin: 1.1em;
+  text-align: center;
+}
+
+.map {
+    margin: 2em 0 0 0;
+    width: 100%;
+    position: relative;
+    z-index: 7;
+    text-align: center;
+}
+
+.map img {
+    width: 90%;
+}
+
+.index section.articleoverview {
+  margin: 0;
+  padding: 0 0 1.5em 0;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  z-index: 10;
+  position: relative;
+}
+
+.index section.articleoverview section:first-of-type {
+  margin: 0em 1.1em;
+}
+
+.index section.articleoverview article {
+  margin: 1.5em 0;
+}
+
+.index article section.ade {
+  background-image: url("images/ade.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 0 15em 0;
+  border-radius: 50px;
+}
+
+.index article section.tour {
+    background-image: url("images/bike2.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    padding: 0 0 15em 0;
+    border-radius: 50px;
+}
+
+.index section.articleoverview section:nth-of-type(2) {
+  margin: 2em 0;
+}
+
+/* Source z-index: https://bit.ly/3D2tBCn */
+.index section.articleoverview article h2 {
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+}
+
+.index section.articleoverview article p {
+  overflow: hidden;
+  position: absolute;
+  padding: 3em 6em 1em 1em;
+  margin: 1em 1.1em;
+  z-index: 2;
+}
+
+.index div.margin {
+  text-align: center;
+  position: relative;
+  margin: 5em 0 0 0;
+  z-index: 1;
+}
+
+.index section.sectionoverview {
+  margin: 0;
+  padding: 0 0 0.2em 0;
+  background-color: #f4efed;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.index section.sectionoverview section:first-of-type {
+  margin: 0em 1.1em;
+}
+
+.index section.sectionoverview section:first-of-type p {
+  text-align: center;
+  margin: 2.5em 1.1em 2em 1.1em;
+}
+
+/* Source heart like button: https://bit.ly/3HaaxDp */
+.heart {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/heart.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: -6.3em 0 0 80vw;
+    position: absolute;
+    z-index: 19;
+}
+
+#trigger:checked + .heart {
+    background-image: url(images/heart-selected.svg);
+}
+
+#trigger {
+    display: none;
+}
+
+/* Source circular images: https://bit.ly/3HoSYAP */
+/* Source angle: https://mzl.la/3J8YNno */
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 1.8em;
+  margin: 1.1em;
+  padding: 0.3em 1.3em;
+  background-color: white;
+  box-shadow: 5px 5px 20px #221f2032;
+  border-radius: 40px;
+}
+
+.card div {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card div img {
+  margin: -22.5px 0 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.card article:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em 0 0 0;
+}
+
+.card article:first-of-type h3 {
+  text-align: center;
+}
+
+.index section:nth-of-type(5) {
+  transform: rotate(4deg);
+}
+
+.index section:nth-of-type(6) {
+  transform: rotate(-4deg);
+}
+
+.index section:nth-of-type(9) {
+  text-align: center;
+}
+
+.index section:nth-of-type(9) p {
+  margin: 1.1em;
+  padding: 0 2em;
+}
+
+.gallery {
+  display: flex;
+  margin: 2.5em 0 0 0;
+}
+
+.gallery div {
+  height: 125px;
+  width: 125px;
+}
+
+.gallery div:first-of-type {
+  background-image: url("images/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery div:nth-of-type(2) {
+  background-image: url("images/bike3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.gallery div:nth-of-type(3) {
+  background-image: url("images/portrait_students-31.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.footer {
+  margin: 5em 1.1em 3em 1.1em;
+  text-align: center;
+}
+
+.footer h3 {
+  margin: 1.1em 0;
+}
+
+.footer p.margin {
+    margin: 1.1em 0;
+  }
+
+.footer section:nth-of-type(3) {
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.footer section:nth-of-type(2) svg {
+  margin: 0.8em 0;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+.footercolofon {
+  padding-bottom: 0;
+}
+
+/* 👀👀👀 All spots page */
+.all-spots nav {
+    background: white;
+}
+
+.all-spots div.nomargin {
+    margin: 0;
+}
+
+.all-spots body {
+  background-color: white;
+}
+
+.all-spots section.margin {
+  margin: 1.1em;
+}
+
+.all-spots section:nth-of-type(2) .scroll {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  overflow-x: scroll;
+  list-style-type: none;
+  display: flex;
+  margin: 0 0 1em 0;
+}
+
+.all-spots .filter {
+  height: 2.5em;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #221f20;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* Source focus state: https://bit.ly/3j2XZFN */
+.all-spots .filter:active,.filter:focus {
+    background-color: #221f20;
+}
+
+.all-spots .filter:active,.filter:focus p {
+    color: white;
+}
+
+.all-spots .filter p {
+  margin: 0 1em;
+}
+
+.all-spots section:nth-of-type(3) {
+  margin: 0 0 2em 0;
+}
+
+/* Source carousel: https://bit.ly/3DhBR1f */
+.carousel {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    margin: 0 0 0 1.1em;
+    width: 100%;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 90%;
+    height: 240px;
+    margin-right: 36px;
+    border-radius: 50px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+
+.slides div img {
+    object-fit: cover;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Source hide scrollbar: https://bit.ly/3wypsCu */
+.slides::-webkit-scrollbar {
+    display: none;
+}
+
+.all-spots .image {
+  background-image: url("images/DGTL-SUNDAY-2016-HR-Shots-by-KIRSTENVANSANTEN-55-770x514.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 0 15em 0;
+  border-radius: 50px;
+  margin: 0 1.1em;
+}
+
+.all-spots .articleoverview {
+  background-color: #f4efed;
+  padding: 0 0 2.3em 0;
+}
+
+.all-spots .articleoverview article h2 {
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+}
+
+.all-spots .articleoverview article p {
+  overflow: hidden;
+  position: absolute;
+  padding: 3em 6em 1em 1em;
+  margin: 1em 1.1em;
+  z-index: 2;
+}
+
+.all-spots .topmargin {
+  text-align: center;
+  position: relative;
+  margin: 5em 0 0 0;
+  z-index: 1;
+}
+
+.all-spots article section.clubnyx {
+  background-image: url("images/friends.jpg");
+  background-size: cover;
+  background-position-y: 40%;
+  background-repeat: no-repeat;
+  padding: 0 0 15em 0;
+  border-radius: 50px;
+  margin: 0 1.1em;
+}
+
+.all-spots article section.waterhole {
+  background-image: url("images/shots.jpg");
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: 60%;
+  background-repeat: no-repeat;
+  padding: 0 0 15em 0;
+  border-radius: 50px;
+  margin: 0 1.1em;
+}
+
+.all-spots section.articleoverview {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.all-spots section.articleoverview article {
+  margin: 1.5em 0;
+}
+
+.space {
+  padding: 0.2em;
+}
+
+.all-spots header section.space {
+    background-color: white;
+}
+
+.all-spots .footer {
+  background-color: #f4efed;
+  margin: 0;
+  padding: 1em 1.1em;
+}
+
+/* 🔥🔥🔥 Route  */
+.xxxdays main {
+    margin: 0 1.1em 1.1em 1.1em;
+    padding: 0 0 5em 0;
+}
+
+.xxxdays div.arrow {
+    width: 45px;
+    height: auto;
+    padding: 7.5em 0 0 0;
+}
+
+.xxxdays div.arrow img {
+    width: 100%;
+}
+
+/* Source input styling: https://bit.ly/3wtm5wL */
+.xxxdays input {
+    width: 5em;
+    margin: 0 0.5em;
+    padding: 0.5em 0;
+    border: none;
+    border-bottom: 2px solid #221f20;
+    background-color: transparent;
+}
+
+.xxxdays input::placeholder {
+    color: #C1B7B3;
+}
+
+/* Source disapearing outline on click: https://bit.ly/3R8xf3d */
+.xxxdays input:focus {
+   outline: none;
+}
+
+/* Source disapearing placeholder: https://bit.ly/3DfDI6S */
+.xxxdays input:focus::placeholder {
+   outline: none;
+   color: transparent;
+}
+
+.xxxdays .buttons {
+    margin: 8em 0 3em 0;
+}
+
+/* Transport */
+.transport main {
+    margin: 0 1.1em 1.1em 1.1em;
+    padding: 0 0 0.5em 0;
+}
+
+.transport div.arrow {
+    width: 45px;
+    height: auto;
+    padding: 7.5em 0 0 0;
+}
+
+.transport div.arrow img {
+    width: 100%;
+}
+
+.transport p {
+    margin: 0.5em 0 2em 0;
+}
+
+.transport .preferance {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Source toggle switch:https://bit.ly/3j31j3Y */
+/* Source box-shadow inset: https://bit.ly/3wxaWeo */
+.transport input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    margin: 0.25em 0;
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: inset 0 2px 3px #221f2028;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+}
+
+.transport input::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.9em;
+    width: 1.9em;
+    background-color: white;
+    box-shadow: 1px 2px 5px #221f2029;
+    transition: left .3s;
+}
+
+.transport input:checked {
+    background-color: #EDE3DF;
+}
+
+.transport input:checked::after {
+    left: 70%;
+}
+
+/* Areas page */
+.areas main {
+    margin: 0 1.1em 1.1em 1.1em;
+    padding: 0 0 0.5em 0;
+}
+
+.areas div.arrow {
+    width: 45px;
+    height: auto;
+    padding: 7.5em 0 0 0;
+}
+
+.areas div.arrow img {
+    width: 100%;
+}
+
+.areas p {
+    margin: 1em 0;
+}
+
+select {
+    width: 220px;
+    margin: 0 0 1.5em 0;
+    color: #C1B7B3;
+    padding: 0.5em 0;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #221f20;
+    font-size: 1em;
+}
+
+/* Route overview page */
+.routeoverview main {
+    margin: 0;
+}
+
+.routeoverview .articleoverview {
+    margin: 2em 0 0 0;
+    background-color: white;
+    padding: 0 0 3.5em 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.box {
+    width: 110px;
+    height: 10px;
+    margin-left: 8em;
+}
+
+.box img {
+    width: 100%;
+}
+
+.routeoverview .articleoverview section {
+    margin: 0 1.1em;
+}
+
+.routeoverview .articleoverview2 {
+    background-color: #F4F7F6;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 0 0 3.5em 0;
+    margin: -2em 0 0 0;
+}
+
+.routeoverview .articleoverview2 section {
+    margin: 0 1.1em;
+}
+
+.routeoverview .articleoverview3 {
+    background-color: white;
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 0 0 3.5em 0;
+    margin: 5.3em 0 0 0;
+}
+
+.routeoverview .articleoverview3 section {
+    margin: 0 1.1em;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.timeline {
+    margin: 2em 1em 0 0.5em;
+}
+
+.route .info {
+    background-color: white;
+    margin: 2em 1em 1em 0;
+    width: 250px;
+    height: 270px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px #221f2032;
+}
+
+.route .info p {
+    margin: 0 1.5em;
+}
+
+.route article {
+    width: 250px;
+    margin: 2em 1em 1em 0;
+}
+
+.route article p {
+    margin: 0 1em;
+    padding: 6.5em 6em 0 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+}
+
+/* .route section.articleoverview article {
+    margin: 1.5em 0;
+  } */
+  
+.route section.campus {
+    background-image: url("images/campus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding: 0 0 10em 0;
+    margin: 0;
+    border-radius: 40px;
+}
+  
+.route h2 {
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+}
+  
+.route div.margin {
+    text-align: center;
+    position: relative;
+    margin: 7em 0 0 0;
+    z-index: 1;
+}
+
+.route .heart {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/heart.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin: -5.5em 1em 0 13.1em;
+    position: absolute;
+    z-index: 19;
+}
+
+.route section.festlunch {
+    background-image: url("images/borrel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    padding: 0 0 10em 0;
+    margin: 0;
+    border-radius: 40px;
+}
+
+.route section.oosterpark {
+    background-image: url("images/oosterpark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    padding: 0 0 10em 0;
+    margin: 0;
+    border-radius: 40px;
+}
+
+.route section.bike {
+    background-image: url("images/bike.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    padding: 0 0 10em 0;
+    margin: 0;
+    border-radius: 40px;
+}
+
+.route section.stedelijk {
+    background-image: url("images/stedelijk.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+    padding: 0 0 10em 0;
+    margin: 0;
+    border-radius: 40px;
+}
